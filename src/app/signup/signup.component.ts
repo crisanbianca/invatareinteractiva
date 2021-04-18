@@ -23,10 +23,10 @@ export class SignupComponent implements OnInit {
   onSubmit(formData) {
     if(formData.valid) {
       console.log(formData.value);
-      this.af.auth.createUser({
-        email: formData.value.email,
-        password: formData.value.password
-      }).then(
+      this.af.createUserWithEmailAndPassword(
+        this.email = formData.value.email,
+        this.password = formData.value.password
+      ).then(
         (success) => {
         console.log(success);
         this.router.navigate(['/login'])

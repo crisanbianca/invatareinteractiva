@@ -1,4 +1,4 @@
-<div class="form-container" id="toolbar">
+<!-- <div class="form-container" id="toolbar">
   <header [@fallIn]="state">
     <button (click)="logout()" class="basic-btn">Logout</button>
   </header>
@@ -8,4 +8,42 @@
     <img src="assets/images/filler.png" />
   </div>
 
-</div>
+</div> -->
+
+<mat-toolbar class = "toolbar-color-temp">
+  <!-- <mat-toolbar-row> -->
+  <button mat-icon-button>
+    <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+  </button>
+  <h1>Invatare Interactiva</h1>
+  <span class="flexExpand"></span>
+  <a mat-button (click)="logout()"> Logout </a>
+    
+
+
+  <!-- </mat-toolbar-row> -->
+
+</mat-toolbar>
+
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav>
+    <mat-nav-list>
+
+      <a mat-list-item [routerLink]="'/lectie1'"> Lectia I </a>
+      <a mat-list-item [routerLink]="'/create-account'"> Lecta II </a>
+      <a mat-list-item [routerLink]="'/contacts'"> Lectia III </a>
+      <a mat-list-item [routerLink]="'/create-contact'"> Lectia IV </a>
+      <a mat-list-item [routerLink]="'/activities'"> Lectia V </a>
+      <a mat-list-item [routerLink]="'/create-activity'"> Lectia VI </a>
+      <a mat-list-item (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
+
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div style="height: 88vh;">
+      <ng-content> </ng-content>
+      
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

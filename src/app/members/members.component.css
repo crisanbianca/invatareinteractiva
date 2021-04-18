@@ -1,4 +1,4 @@
-#toolbar {
+/* #toolbar {
   padding:0;
   width:70%;
   margin-left:-35%;
@@ -36,4 +36,23 @@ h2 {
       width:90%;
       margin-left: -45%;
   }
+} */
+
+mdb-accordion-item-head.active a h5 {
+  color: red !important;
+  background-color: yellow !important;
+}
+
+
+mdb-accordion-item-body a.active {
+  color: red !important;
+  background-color: yellow !important;
+}
+.flexExpand {
+  flex: 1 1 auto;
+}
+
+.toolbar-color-temp {
+  background: #3B8598;
+  color:  white;
 }

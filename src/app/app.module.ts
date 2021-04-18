@@ -17,6 +17,18 @@ import { LoginComponent } from './login/login.component';
 import { EmailComponent } from './email/email.component';
 import { SignupComponent } from './signup/signup.component';
 import { MembersComponent } from './members/members.component';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatToolbarModule } from '@angular/material/toolbar'
+import { MatIconModule } from '@angular/material/icon'
+import { MatSidenavModule } from '@angular/material/sidenav'
+import { MatListModule } from '@angular/material/list'
+import { MatButtonModule } from '@angular/material/button';
+import { Lectie1Component } from './lectie1/lectie1.component'
+import {YouTubePlayerModule} from '@angular/youtube-player';
+import { VideoComponent } from './video/video.component';
+
+
 
 var firebaseConfig = {
   apiKey: "AIzaSyAYWNrx5gMTOvLaIdy8lA7vISlX1K9hhLs",
@@ -35,7 +47,9 @@ var firebaseConfig = {
     LoginComponent,
     EmailComponent,
     SignupComponent,
-    MembersComponent
+    MembersComponent,
+    Lectie1Component,
+    VideoComponent
   ],
   imports: [
     BrowserModule,
@@ -45,6 +59,14 @@ var firebaseConfig = {
     AngularFireStorageModule, // storage
     CommonModule,
     FormsModule,
+    MDBBootstrapModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatListModule,
+    MatButtonModule,
+    YouTubePlayerModule,
     routes
   ],
   providers: [AuthGuard],
