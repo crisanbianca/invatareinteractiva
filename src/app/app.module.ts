@@ -24,9 +24,12 @@ import { MatIconModule } from '@angular/material/icon'
 import { MatSidenavModule } from '@angular/material/sidenav'
 import { MatListModule } from '@angular/material/list'
 import { MatButtonModule } from '@angular/material/button';
-import { Lectie1Component } from './lectie1/lectie1.component'
 import {YouTubePlayerModule} from '@angular/youtube-player';
-import { VideoComponent } from './video/video.component';
+import { InovareInEchipaComponent } from './inovare-in-echipa/inovare-in-echipa.component';
+import { ClimatulInEchipaComponent } from './climatul-in-echipa/climatul-in-echipa.component';
+import { DiversitateaInEchipaComponent } from './diversitatea-in-echipa/diversitatea-in-echipa.component';
+import { LiderulEchipeiComponent } from './liderul-echipei/liderul-echipei.component';
+import {MatCardModule} from '@angular/material/card';
 
 
 
@@ -48,8 +51,10 @@ var firebaseConfig = {
     EmailComponent,
     SignupComponent,
     MembersComponent,
-    Lectie1Component,
-    VideoComponent
+    InovareInEchipaComponent,
+    ClimatulInEchipaComponent,
+    DiversitateaInEchipaComponent,
+    LiderulEchipeiComponent
   ],
   imports: [
     BrowserModule,
@@ -66,6 +71,8 @@ var firebaseConfig = {
     MatSidenavModule,
     MatListModule,
     MatButtonModule,
+    MatCardModule,
+    MatIconModule,
     YouTubePlayerModule,
     routes
   ],

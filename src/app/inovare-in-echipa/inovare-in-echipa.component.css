@@ -1,0 +1,16 @@
+h2 {
+  margin: 1.7em 0 .9em 0;
+  padding-left: 7%;
+}
+
+.card{
+  background-color: #F2F4CB;
+  color: #232c33;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  height: 100%;
+  border-radius: 5%;
+  border: 10px solid #232C33;
+}

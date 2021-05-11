@@ -34,7 +34,7 @@ onSubmit(formData) {
       ).then(
       (success) => {
       console.log(success);
-      this.router.navigate(['/members']);
+      this.router.navigate(['/inovare']);
     }).catch(
       (err) => {
       console.log(err);

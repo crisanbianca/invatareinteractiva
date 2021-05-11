@@ -15,10 +15,10 @@
   <button mat-icon-button>
     <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
   </button>
-  <h1>Invatare Interactiva</h1>
+  <h1>Inovarea în echipe</h1>
   <span class="flexExpand"></span>
   <a mat-button (click)="logout()"> Logout </a>
-    
+
 
 
   <!-- </mat-toolbar-row> -->
@@ -30,20 +30,17 @@
   <mat-sidenav #sidenav>
     <mat-nav-list>
 
-      <a mat-list-item [routerLink]="'/lectie1'"> Lectia I </a>
-      <a mat-list-item [routerLink]="'/create-account'"> Lecta II </a>
-      <a mat-list-item [routerLink]="'/contacts'"> Lectia III </a>
-      <a mat-list-item [routerLink]="'/create-contact'"> Lectia IV </a>
-      <a mat-list-item [routerLink]="'/activities'"> Lectia V </a>
-      <a mat-list-item [routerLink]="'/create-activity'"> Lectia VI </a>
-      <a mat-list-item (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
+      <a mat-list-item [routerLink]="'/inovare'">I. Inovarea în echipe - Beneficii</a>
+      <a mat-list-item [routerLink]="'/climat'"> II. Climatul în echipă</a>
+      <a mat-list-item [routerLink]="'/diversitate'">III. Diversitatea în echipă</a>
+      <a mat-list-item [routerLink]="'/lider'">IV. Liderul echipei</a>
 
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
     <div style="height: 88vh;">
       <ng-content> </ng-content>
-      
+
     </div>
   </mat-sidenav-content>
 </mat-sidenav-container>
