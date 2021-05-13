@@ -1,0 +1,59 @@
+#goback {
+  font-weight:bold;
+  text-transform:uppercase;
+  font-size:.8em;
+  font-size:1.3em;
+  color:#3B8598;
+  float: right;
+}
+
+.info{
+  width: 50%;
+  display:inline-block;
+  float:left;
+}
+
+.img{
+  width: 50%;
+  display:inline-block;
+  float:left;
+  margin-bottom: 3%;
+}
+
+.container{
+  margin: 3%;
+  margin-left: 6%;
+}
+
+h1{
+  font-weight: bold;
+  font-size: 3em;
+}
+
+.example-radio-group {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.example-radio-button {
+  margin: 5px;
+}
+
+
+p{
+  font-size: 1.3em;
+  padding-top: 1%;
+  color:#3B8598;
+}
+
+label{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+button{
+  background-color: #3B8598;
+  color: white;
+  width: 10em;
+}

@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 import { CommonModule } from '@angular/common';
-import { FormsModule }   from '@angular/forms';
+import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 
 import { AuthGuard } from './auth.service';
 import { routes } from './app.routes';
@@ -30,6 +30,19 @@ import { ClimatulInEchipaComponent } from './climatul-in-echipa/climatul-in-echi
 import { DiversitateaInEchipaComponent } from './diversitatea-in-echipa/diversitatea-in-echipa.component';
 import { LiderulEchipeiComponent } from './liderul-echipei/liderul-echipei.component';
 import {MatCardModule} from '@angular/material/card';
+import { MatDialogModule } from '@angular/material/dialog';
+import { ResurseInovareComponent } from './inovare-in-echipa/resurse/resurse.component';
+import { QuizInovareComponent } from './inovare-in-echipa/quiz/quiz.component';
+import { ResurseClimatComponent } from './climatul-in-echipa/resurse/resurse.component';
+import { ResurseDiversitateComponent } from './diversitatea-in-echipa/resurse/resurse.component';
+import { ResurseLiderComponent } from './liderul-echipei/resurse/resurse.component';
+import { QuizClimatComponent } from './climatul-in-echipa/quiz/quiz.component';
+import { QuizDiversitateComponent } from './diversitatea-in-echipa/quiz/quiz.component';
+import { QuizLiderComponent } from './liderul-echipei/quiz/quiz.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatRadioModule} from '@angular/material/radio';
 
 
 
@@ -54,7 +67,15 @@ var firebaseConfig = {
     InovareInEchipaComponent,
     ClimatulInEchipaComponent,
     DiversitateaInEchipaComponent,
-    LiderulEchipeiComponent
+    LiderulEchipeiComponent,
+    ResurseClimatComponent,
+    ResurseDiversitateComponent,
+    ResurseInovareComponent,
+    ResurseLiderComponent,
+    QuizClimatComponent,
+    QuizDiversitateComponent,
+    QuizInovareComponent,
+    QuizLiderComponent
   ],
   imports: [
     BrowserModule,
@@ -73,7 +94,15 @@ var firebaseConfig = {
     MatButtonModule,
     MatCardModule,
     MatIconModule,
+    MatDialogModule,
     YouTubePlayerModule,
+    MatButtonModule,
+    MatIconModule,
+    MatFormFieldModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    MatCheckboxModule,
+    MatRadioModule,
     routes
   ],
   providers: [AuthGuard],

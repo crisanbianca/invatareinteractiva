@@ -4,11 +4,6 @@
   display:block;
 }
 
-#fb {
-  background:#3B5998 14px 6px;
-  background-size: 47px;
-  color:#fff;
-}
 
 #google {
   border: 1px solid #95989A;
@@ -18,8 +13,9 @@
 }
 
 #email {
-  background: #ECECEC 25px;
+  background: #3B8598 25px;
   background-size: 25px;
+  color: white;
 }
 
 @media (max-width: 600px) {
@@ -30,28 +26,33 @@
       width:90%;
       margin-left: -45%;
   }
-  #fb {
-      background:#3B5998;
-  }
+
 
   #google {
       background: #fff;
   }
 
   #email {
-      background: #ECECEC;
+      background: #3B8598;
   }
 }
 
 You can add global styles to this file, and also import other style files
 body {
   background:#E2E4E6;
-  padding-top:4em;
+  padding-top:7em;
+}
+
+h1{
+  color: #3B8598;
+  justify-content: center;
+  text-align: center;
+  size: 2rem;
 }
 
 .form-container {
   background:white;
-  padding:3.5em;
+  padding:5em;
   width:500px;
   position:fixed;
   left:50%;

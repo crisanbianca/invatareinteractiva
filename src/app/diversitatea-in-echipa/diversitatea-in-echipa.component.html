@@ -1,6 +1,39 @@
 <app-members>
   <h2>
-      <p>Lectie1 works!</p>
-      <iframe width="560" height="315" src='https://www.youtube.com/embed/te0jxTDyOFc' frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <h1><b>DIVERSITATEA ÎN ECHIPĂ</b></h1>
+      <p>Ingredientul principal al inovației</p>
+      <div class="row justify-content-around">
+        <div class="col-sm container">
+          <mat-card class="card" >
+            <mat-card-title>Vizionare videoclip</mat-card-title>
+            <mat-card-content>
+              <mat-icon class="icon">videocam</mat-icon>
+              <button class="button" (click)="openVideo()">Vizionează</button>
+            </mat-card-content>
+          </mat-card>
+        </div>
+        <div class="col-sm container">
+          <mat-card class="card">
+            <mat-card-title>Resurse</mat-card-title>
+            <mat-card-content>
+              <mat-icon class="icon"> insert_drive_file</mat-icon>
+              <button class="button" (click)="openResources()">Citește</button>
+            </mat-card-content>
+          </mat-card>
+        </div>
+        <div class="col-sm container">
+          <mat-card class="card">
+            <mat-card-title> Quiz </mat-card-title>
+            <mat-card-content>
+              <mat-icon class="icon">help</mat-icon>
+              <button class="button" (click)="openQuiz()">Începe</button>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+
+
+
+
   </h2>
 </app-members>

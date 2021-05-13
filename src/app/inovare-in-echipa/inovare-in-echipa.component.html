@@ -1,29 +1,35 @@
 <app-members>
   <h2>
-      <h1><b>Inovarea în echipe - Beneficii</b></h1>
-      <p>Some description about this chapter</p>
+      <h1><b>INOVAREA ÎN ECHIPĂ - BENEFICII</b></h1>
+      <p class="description">Bine te-am găsit! Dacă ești aici, înseamnă că împărtășim o curiozitate legată de Inovare și cum arată aceasta în cadrul echipelor.
+        Ți-am pregătit câteva capitole care să te surprindă și informeze, scurt și la obiect fiindcă știm că ești ocupat, așadar îți dorim mult spor la inovat în continuare!
+        </p>
+      <p style="color: #3B8598;">LET'S START!</p>
       <div class="row justify-content-around">
-        <div class="col-sm">
-          <mat-card class="card">
-            <mat-card-title>DESCRIERE</mat-card-title>
+        <div class="col-sm container">
+          <mat-card class="card" >
+            <mat-card-title>Vizionare videoclip</mat-card-title>
             <mat-card-content>
-
+              <mat-icon class="icon">videocam</mat-icon>
+              <button class="button" (click)="openVideo()">Vizionează</button>
             </mat-card-content>
           </mat-card>
         </div>
-        <div class="col-sm">
+        <div class="col-sm container">
           <mat-card class="card">
-            <mat-card-title>VIZIUNE</mat-card-title>
+            <mat-card-title>Resurse</mat-card-title>
             <mat-card-content>
-
+              <mat-icon class="icon"> insert_drive_file</mat-icon>
+              <button class="button" (click)="openResources()">Citește</button>
             </mat-card-content>
           </mat-card>
         </div>
-        <div class="col-sm">
+        <div class="col-sm container">
           <mat-card class="card">
-            <mat-card-title>PARC AUTO</mat-card-title>
+            <mat-card-title> Quiz </mat-card-title>
             <mat-card-content>
-
+              <mat-icon class="icon">help</mat-icon>
+              <button class="button" (click)="openQuiz()">Începe</button>
             </mat-card-content>
           </mat-card>
         </div>
@@ -31,6 +37,6 @@
 
 
 
-      <iframe width="560" height="315" src='https://www.youtube.com/embed/czIVyptMvFc' frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
   </h2>
 </app-members>

@@ -1,0 +1,83 @@
+<app-members>
+  <div class="container">
+    <a routerLink="/lider" id="goback">Go back</a>
+    <h1>LIDERUL îN ECHIPĂ - QUIZ</h1>
+    <div>
+    <div class="info">
+
+      <label id="a1"> O provocare a stilului transformațional de leadership în inovație este…</label>
+      <mat-radio-group
+        class="example-radio-group"
+        [(ngModel)]="a1"
+        >
+        <mat-radio-button class="example-radio-button" *ngFor="let answer of q1" [value]="answer" [name]="answer">
+          {{answer}}
+        </mat-radio-button>
+      </mat-radio-group>
+      <p *ngIf="showResult"><b>Răspuns corect: Personalitatea și viziunea liderului pot împiedica creativitatea la nivelul membrilor echipei</b></p>
+
+      <label id="a2">Ce stil de leadership se potrivește mai bine cu faza incipientă, de brainstorming, a unui proiect?
+      </label>
+      <mat-radio-group
+        aria-labelledby="a2"
+        class="example-radio-group"
+        [(ngModel)]="a2">
+        <mat-radio-button class="example-radio-button" *ngFor="let answer of q2" [value]="answer">
+          {{answer}}
+        </mat-radio-button>
+      </mat-radio-group>
+      <p *ngIf="showResult"><b>Răspuns corect: Transformațional</b></p>
+
+      <label id="a3">La ce se referă conducerea ambidextră?
+      </label>
+      <mat-radio-group
+        aria-labelledby="a3"
+        class="example-radio-group"
+        [(ngModel)]="a3">
+        <mat-radio-button class="example-radio-button" *ngFor="let answer of q3" [value]="answer">
+          {{answer}}
+        </mat-radio-button>
+      </mat-radio-group>
+      <p *ngIf="showResult"><b>Răspuns corect: Distincția dintre generarea de idei și implementarea ideilor</b></p>
+
+      </div>
+      <div class="img">
+        <img src="../../../assets/images/quiz4.jpg">
+      </div>
+      </div>
+      <label id="a4">Când sunt mai eficiente comportamentele de conducere directive și tranzacționale?</label>
+      <mat-radio-group
+        aria-labelledby="a4"
+        class="example-radio-group"
+        [(ngModel)]="a4">
+        <mat-radio-button class="example-radio-button" *ngFor="let answer of q4" [value]="answer">
+          {{answer}}
+        </mat-radio-button>
+      </mat-radio-group>
+      <p style="margin-left: 50%;" *ngIf="showResult"><b>Răspuns corect: Pe măsură ce înaintează inovațiile către implementare</b></p>
+
+      <label id="a5">De ce leadershipul transformațional poate împiedica creativitatea și inovația?
+      </label>
+      <mat-radio-group
+        aria-labelledby="a5"
+        class="example-radio-group"
+        [(ngModel)]="a5">
+        <mat-radio-button class="example-radio-button" *ngFor="let answer of q5" [value]="answer">
+          {{answer}}
+        </mat-radio-button>
+      </mat-radio-group>
+      <p *ngIf="showResult"><b>Răspuns corect: Carisma liderului crește dependența membrilor echipei și îi împiedică pe aceștia să își urmeze propriile idei </b></p>
+
+    <button mat-stroked-button class="submit-button" type="submit" (click)="onSubmit()">SUBMIT</button>
+    <p class="points" *ngIf="showResult"><b>Ai obtinut {{score}}/5 raspunsuri corecte.</b></p>
+    <div style="color: white;">Sfarsit</div>
+    <div style="color: white;">Sfarsit</div>
+    <div style="color: white;">Sfarsit</div>
+    <div style="color: white;">Sfarsit</div>
+    <div style="color: white;">Sfarsit</div>
+    <div style="color: white;">Sfarsit</div>
+    <div style="color: white;">Sfarsit</div>
+    <div style="color: white;">Sfarsit</div>
+    <div style="color: white;">Sfarsit</div>
+  </div>
+  </app-members>
