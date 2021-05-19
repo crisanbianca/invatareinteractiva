@@ -35,6 +35,7 @@ export class QuizDiversitateComponent implements OnInit {
   }
 
   onSubmit(){
+    this.score=0;
     if(this.a1 === 'Fondul informațional generos')
       this.score += 1;
     if(this.a2 === 'Adevărat')

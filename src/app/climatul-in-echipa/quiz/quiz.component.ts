@@ -35,6 +35,7 @@ export class QuizClimatComponent implements OnInit {
   }
 
   onSubmit(){
+    this.score=0;
     if(this.a1 === 'modul în care este percepută atmosfera si modul în care sunt create practicile, procedurile și recompensele')
       this.score += 1;
     if(this.a2 === 'Fals')

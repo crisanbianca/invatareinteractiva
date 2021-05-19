@@ -36,6 +36,7 @@ export class QuizLiderComponent implements OnInit {
   }
 
   onSubmit(){
+    this.score=0;
     if(this.a1 === 'Personalitatea și viziunea liderului pot împiedica creativitatea la nivelul membrilor echipei')
       this.score += 1;
     if(this.a2 === 'Transformațional')

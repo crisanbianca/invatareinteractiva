@@ -36,6 +36,7 @@ export class QuizInovareComponent implements OnInit {
   }
 
   onSubmit(){
+    this.score=0;
     if(this.a1 === 'În general înțeleasă ca incluzând atât dezvoltarea, cât și implementarea noutăților')
       this.score += 1;
     if(this.a2 === 'Adevărat')
